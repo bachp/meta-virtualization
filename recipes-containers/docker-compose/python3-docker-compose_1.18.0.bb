@@ -3,12 +3,10 @@ HOMEPAGE = "https://www.docker.com/"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=435b266b3899aa8a959f17d41c56def8"
 
-SRC_URI += "file://0001-Allow-newer-versions-of-requests.patch"
-
 inherit pypi setuptools3
 
-SRC_URI[md5sum] = "8dcadf09143600fcb573b43f446c8f9a"
-SRC_URI[sha256sum] = "fb46a6a2c4d193a3ff1e4d7208eea920b629c81dc92257c87f3f93095cfb0bdf"
+SRC_URI[md5sum] = "4da78bfb39f494f65d57c6efe581c4fd"
+SRC_URI[sha256sum] = "2930cbfe2685018fbb75377600ab6288861d9955717b3f14212f63950351d379"
 
 RDEPENDS_${PN} = "\
   ${PYTHON_PN}-cached-property \
@@ -25,7 +23,6 @@ RDEPENDS_${PN} = "\
   ${PYTHON_PN}-pyyaml \
   ${PYTHON_PN}-requests \
   ${PYTHON_PN}-six \
-  ${PYTHON_PN}-terminal \
   ${PYTHON_PN}-texttable \
   ${PYTHON_PN}-urllib3 \
   ${PYTHON_PN}-websocket-client \
