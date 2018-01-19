@@ -5,13 +5,14 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=34f3846f940453127309b920eeb89660"
 
 inherit pypi setuptools3
 
-SRC_URI[md5sum] = "7d917152976df075e6e90ee853df641f"
-SRC_URI[sha256sum] = "b876e6909d8d2360e0540364c3a952a62847137f4674f2439320ede16d6db880"
+SRC_URI[md5sum] = "994e82eaa070c45797c82547f94fc0b6"
+SRC_URI[sha256sum] = "144248308e8ea31c4863c6d74e1b55daf97cc190b61d0fe7b7313ab920d6a76c"
 
 DEPENDS += "${PYTHON_PN}-pip-native"
 
 RDEPENDS_${PN} += " \
 	python3-docker-pycreds \
 	python3-requests \
+	python3-six \
 	python3-websocket-client \
 "
